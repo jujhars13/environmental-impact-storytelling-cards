@@ -21,29 +21,15 @@ jobs:
           npm install
           npm run build
 
-      - name: Archive artifact
-        shell: sh
-        run: |
-          tar \
-            --dereference --hard-dereference \
-            --directory "docs/" \
-            -cvf "$RUNNER_TEMP/artifact.tar" \
-            --exclude=.git \
-            --exclude=.github \
-            .
-        env:
-          INPUT_PATH: ${{ inputs.path }}
-
-      - name: Upload artifact
+      - name: Upload Pages artifact
         uses: actions/upload-artifact@v3
         with:
           name: github-pages
-          path: ${{ runner.temp }}/artifact.tar
           retention-days: 5
-          if-no-files-found: error
-
-      - name: Upload Pages artifact
-        uses: actions/upload-pages-artifact@v2
+          path: |
+            docs
+            !.github/**
+            !.git/**
 
   # Deploy job
   deploy:
