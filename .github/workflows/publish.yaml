@@ -12,11 +12,15 @@ jobs:
 
     steps:
       - uses: actions/checkout@v3
+
       - name: Use Node.js 20
         uses: actions/setup-node@v3
         with:
           node-version: 20
-      - run: npm run build
+      - run: |
+          npm install
+          npm run build
+
       - name: Archive artifact
         shell: sh
         run: |
@@ -37,6 +41,7 @@ jobs:
           path: ${{ runner.temp }}/artifact.tar
           retention-days: 5
           if-no-files-found: error
+
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v2
 
