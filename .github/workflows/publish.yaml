@@ -1,8 +1,44 @@
+name: pull-request
+on: [push, pull_request]
+
 jobs:
   # Build job
   build:
-    # <Not provided for brevity>
     # At a minimum this job should upload artifacts using actions/upload-pages-artifact
+
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+
+    steps:
+      - uses: actions/checkout@v3
+      - name: Use Node.js 20
+        uses: actions/setup-node@v3
+        with:
+          node-version: 20
+      - run: npm run build
+    - name: Archive artifact
+      shell: sh
+      run: |
+        tar \
+          --dereference --hard-dereference \
+          --directory "docs/" \
+          -cvf "$RUNNER_TEMP/artifact.tar" \
+          --exclude=.git \
+          --exclude=.github \
+          .
+      env:
+        INPUT_PATH: ${{ inputs.path }}
+
+    - name: Upload artifact
+      uses: actions/upload-artifact@v3
+      with:
+        name: github-pages
+        path: ${{ runner.temp }}/artifact.tar
+        retention-days: 5
+        if-no-files-found: error
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v2
 
   # Deploy job
   deploy:
@@ -11,8 +47,8 @@ jobs:
 
     # Grant GITHUB_TOKEN the permissions required to make a Pages deployment
     permissions:
-      pages: write      # to deploy to Pages
-      id-token: write   # to verify the deployment originates from an appropriate source
+      pages: write # to deploy to Pages
+      id-token: write # to verify the deployment originates from an appropriate source
 
     # Deploy to the github-pages environment
     environment:
