@@ -1,6 +1,6 @@
-# environmental-impact-storytelling-cards
+# Environmental Impact Storytelling Cards
 
-Cards to help stimulate fictional stories about the environment
+Cards to help stimulate fictional stories about the environment to explore the individual impact of various climate crisis around the world.
 
 ## Local Dev
 
@@ -17,3 +17,7 @@ node_modules/.bin/webpack --watch
 
 # browse to http://localhost:8080/
 ```
+
+## Deployment
+
+Deploys automatically to github pages [https://environment-story-cards.jujhar.com/](https://environment-story-cards.jujhar.com/) using Github actions: `.github/workflows/publish.yaml`

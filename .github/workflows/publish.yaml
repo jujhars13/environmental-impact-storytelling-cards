@@ -4,8 +4,6 @@ on: [push, pull_request]
 jobs:
   # Build job
   build:
-    # At a minimum this job should upload artifacts using actions/upload-pages-artifact
-
     runs-on: ubuntu-latest
     permissions:
       contents: read
