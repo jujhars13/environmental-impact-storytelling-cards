@@ -1,0 +1,24 @@
+[
+  {
+    "id": 1,
+    "category": "Dev Practices",
+    "title": "Documentation",
+    "description": "How good are your docs? How trusted are they?",
+    "high_score": "Our docs are updated regularly and are accurate",
+    "low_score": "Documentation is poor, out of date or non-existant",
+    "more_info_link": null,
+    "important": null,
+    "seq": 1
+  },
+  {
+    "id": 2,
+    "category": "Dev Practices",
+    "title": "IaC",
+    "description": "How much do you follow Infrastructure as Code practices",
+    "high_score": "We use versioned and tested IaC for all our deployments.  It is kept alongside the code or in a dedicated and well documented repo.  Manual processes are far and few-between and well documneted",
+    "low_score": "Our deployments are full on manual ClickOps",
+    "more_info_link": null,
+    "important": null,
+    "seq": null
+  }
+]
