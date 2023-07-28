@@ -13,7 +13,7 @@ npm install
 
 # in the root of the repo
 node_modules/.bin/webpack --watch
-(cd docs && reload -e "html|js|css|json|yml")
+(cd build && reload -e "html|js|css|json|yml")
 
 # browse to http://localhost:8080/
 ```
