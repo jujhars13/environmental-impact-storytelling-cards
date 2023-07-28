@@ -13,7 +13,7 @@ function renderUserView(rawData) {
     }
     return category;
   });
-
+  console.log(rawData);
   return Mustache.render(
     `
   {{#data}}
