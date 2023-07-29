@@ -26,7 +26,6 @@ function renderUserView(rawData) {
           </div>
         </div>
         <div class="card-back scroll">
-          <div class="card-number">{{id}}</div>
           {{#important}}
           <span class="card-important"><i class="fas fa-star"></i></span>
           {{/important}}
