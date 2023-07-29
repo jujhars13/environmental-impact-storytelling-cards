@@ -1,6 +1,6 @@
 # Environmental Impact Storytelling Cards
 
-Cards to help stimulate fictional stories about the environment to explore the individual impact of various climate crisis around the world.
+Static HTML site which presents sards to help stimulate fictional stories about the environment to explore the individual impact of various climate crisis around the world.
 
 ## Local Dev
 

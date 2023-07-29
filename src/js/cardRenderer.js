@@ -20,8 +20,10 @@ function renderUserView(rawData) {
 
     <div class="main-card-container col-md-6 col-lg-3 mb-2">
       <div class="question-card">
-        <div class="card-front {{slug}}">
-          <div class="card-number">{{id}}</div>
+        <div class="card-front d-flex justify-content-center align-items-center {{slug}}">
+          <div class="card-number d-flex justify-content-center align-items-center">
+            <span>{{id}}</span>
+          </div>
         </div>
         <div class="card-back scroll">
           <div class="card-number">{{id}}</div>

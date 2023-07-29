@@ -140,14 +140,14 @@ span.card-important {
 .card-number {
   margin: 10px;
   border-radius: 50%;
-  width: 65px;
-  height: 65px;
+  width: 165px;
+  height: 165px;
   padding: 2px;
   background: #fff;
   border: 2px solid #666;
   color: #666;
   text-align: center;
-  font-size: 2.3rem;
+  font-size: 4.3rem;
   justify-content: center;
   cursor: pointer;
 }
