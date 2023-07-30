@@ -4,7 +4,10 @@ const CopyWebpackPlugin = require("copy-webpack-plugin");
 
 const output = {
   filename: "js/main.js",
-  path: path.resolve(__dirname, "build"),
+  path: path.resolve(
+    __dirname,
+    process.env?.DESTINATION_DIR ? process.env?.DESTINATION_DIR : "build",
+  ),
 };
 
 module.exports = {
@@ -26,7 +29,7 @@ module.exports = {
         },
         {
           from: "src/robots.txt",
-          to: `${output.path}/data/robots.txt`,
+          to: `${output.path}/robots.txt`,
         },
       ],
     }),
