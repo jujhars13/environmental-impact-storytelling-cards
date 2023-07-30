@@ -29,10 +29,15 @@ function renderUserView(rawData) {
           {{#important}}
           <span class="card-important"><i class="fas fa-star"></i></span>
           {{/important}}
-          <h2>{{title}}</h2>
+          <h2>{{name}}</h2>
+          <h4>{{location}}</h4>
+          <h5>{{age}}, {{gender}}</h5>
           <div class="card-score">
             <p>{{description}}</p>
           </div>
+          {{#more_info_link}}
+          <p><a href="{{more_info_link}}" class="card-link">More Info</a></p>
+          {{/more_info_link}}
         </div>
       </div>
     </div>

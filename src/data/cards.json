@@ -1,26 +1,76 @@
 [
   {
     "id": 1,
-    "title": "Documentation",
-    "description": "How good are your docs? How trusted are they?",
+    "name": "Fatima Ahmed",
+    "age": "35",
+    "gender": "Female",
+    "location": "Dhaka, Bangladesh",
+    "occupation": "Small-scale farmer",
+    "description": "Fatima is a resilient farmer living in a low-lying region of Bangladesh, where she cultivates crops to support her family. However, with increasing temperatures and frequent flooding due to rising sea levels, her farmland is becoming less productive, putting her family's livelihood at risk.",
     "more_info_link": null,
     "important": null,
     "seq": 1
   },
   {
     "id": 2,
-    "title": "Documentations",
-    "description": "How good are your docs? How trusted are they?",
+    "name": "Diego Gonzalez",
+    "age": "28",
+    "gender": "Male",
+    "location": "Lima, Peru",
+    "occupation": "Fisherman",
+    "description": "Diego comes from a long line of fishermen who have relied on the ocean for their sustenance. However, with ocean acidification and rising sea temperatures, fish populations have drastically decreased, making it challenging for him to support his family and maintain his traditional way of life.",
     "more_info_link": null,
     "important": null,
     "seq": 1
   },
   {
     "id": 3,
-    "title": "IaC",
-    "description": "How much do you follow Infrastructure as Code practices",
+    "name": "Amina Saidi",
+    "age": "42",
+    "gender": "Female",
+    "location": "Nairobi, Kenya",
+    "occupation": "Street Vendor",
+    "description": "Amina is a street vendor selling goods in the bustling city of Nairobi. As extreme weather events become more frequent, her small business is affected, and the unpredictable rains impact her ability to earn a stable income.",
     "more_info_link": null,
     "important": null,
-    "seq": null
+    "seq": 1
+  },
+  {
+    "id": 4,
+    "name": "Javier Ramirez",
+    "age": "60",
+    "gender": "Male",
+    "location": "Phoenix, Arizona, USA",
+    "occupation": "homeless veteran Retired Construction Worker",
+    "description": "Javier has spent his life as a construction worker in the sweltering city of Phoenix. With the increasing intensity of heatwaves due to climate change, he faces health risks during hot summers, as extreme temperatures put a strain on the city's infrastructure.",
+    "more_info_link": null,
+    "important": null,
+    "seq": 1
+  },
+  {
+    "id": 5,
+    "name": "Ngozi Adewale",
+    "age": "19",
+    "gender": "Female",
+    "location": "Lagos, Nigeria",
+    "occupation": "Student",
+    "description": "Ngozi is a passionate young student with dreams of becoming an environmental advocate. However, living in a densely populated and polluted city, she faces health challenges from air pollution and extreme weather events that disrupt her studies and threaten her future prospects.",
+    "more_info_link": null,
+    "important": null,
+    "seq": 1
+  },
+  {
+    "id": 6,
+    "name": "David Jones",
+    "age": "44",
+    "gender": "Male",
+    "location": "Oxford, UK",
+    "occupation": "Dairy Farmer",
+    "description": "Ngozi is a passionate young student with dreams of becoming an environmental advocate. However, living in a densely populated and polluted city, she faces health challenges from air pollution and extreme weather events that disrupt her studies and threaten her future prospects.",
+    "more_info_link": [
+      "https://www.theguardian.com/business/2023/jul/29/uk-dairy-farmers-costs-milk-price-energy-feed-bills"
+    ],
+    "important": null,
+    "seq": 1
   }
 ]
