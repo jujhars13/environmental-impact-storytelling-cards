@@ -23,3 +23,7 @@ node_modules/.bin/webpack --watch
 ## Deployment
 
 Deploys automatically to github pages [https://environment-story-cards.jujhar.com/](https://environment-story-cards.jujhar.com/) using Github actions: `.github/workflows/publish.yaml`
+
+## TODO
+
+- [ ] Add websockets capability so that stories can be written live by individuals against the card (Google docs style)

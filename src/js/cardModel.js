@@ -10,6 +10,12 @@
 // }]
 import rawCardData from "../data/cards.json";
 
+const cardData = rawCardData.map((card) => {
+  if (card?.moreInfoLinks) {
+    console.log(card?.moreInfoLinks);
+  }
+  return card;
+});
 // get all categories first then add data to them
 // we want the data objects by returned by category
 // get unique categories to begin with
@@ -31,4 +37,4 @@ import rawCardData from "../data/cards.json";
 // const cardOnlyData = Object.values(categories);
 // console.log(cardOnlyData);
 
-export default rawCardData;
+export default cardData;

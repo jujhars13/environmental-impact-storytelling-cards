@@ -6,13 +6,6 @@ import Mustache from "mustache";
  * @returns string <the rendered HTML template>
  */
 function renderUserView(rawData) {
-  const data = rawData.map((category) => {
-    category.slug = "";
-    if (category.categoryName) {
-      category.slug = category.categoryName.toLowerCase().replace(" ", "-");
-    }
-    return category;
-  });
   return Mustache.render(
     `
   {{#data}}
@@ -37,9 +30,9 @@ function renderUserView(rawData) {
           </div>
           {{/image}}
           <div>
-            {{#more_info_link}}
-            <p><a href="{{more_info_link}}" class="btn btn-primary stretched-link">More Info</a></p>
-            {{/more_info_link}}
+          {{#moreInfoLinks}}
+              <a href="{{.}}" class="btn btn-primary" target="_blank">More Info</a>
+          {{/moreInfoLinks}}
           </div>
         </div>
       </div>
