@@ -55,7 +55,8 @@
     "description": "Javier spent his whole life in the city, he fought in the Korean War and has struggled with his mental health.",
     "moreInfoLinks": [
       "https://apnews.com/article/homeless-heat-phoenix-climate-a47f04ee21b96651585f3684ac35cb6e",
-      "https://www.theguardian.com/us-news/2023/aug/01/heat-related-deaths-us-temperatures-heatwave?CMP=Share_iOSApp_Other"
+      "https://www.theguardian.com/us-news/2023/aug/01/heat-related-deaths-us-temperatures-heatwave?CMP=Share_iOSApp_Other",
+      "https://www.bbc.co.uk/news/world-us-canada-66158847"
     ],
     "image": "4.jpg",
     "important": null,
@@ -73,6 +74,21 @@
       "https://www.theguardian.com/business/2023/jul/29/uk-dairy-farmers-costs-milk-price-energy-feed-bills"
     ],
     "image": "5.jpg",
+    "important": null,
+    "seq": 1
+  },
+  {
+    "id": 6,
+    "name": "Elahee Hafiz",
+    "age": "6",
+    "gender": "Female",
+    "location": "Palmyra, Syria",
+    "occupation": "Child",
+    "description": "Elahee is a preccocious 6 year old who likes to play with the animals on her family farm.",
+    "moreInfoLinks": [
+      "https://www.motherjones.com/politics/2014/05/syria-climate-years-living-dangerously-symbolia/"
+    ],
+    "image": "6.webp",
     "important": null,
     "seq": 1
   }
